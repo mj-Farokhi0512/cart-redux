@@ -10,6 +10,8 @@ import {
   LIKE,
   DISLIKE,
   CHANGE_PAGE,
+  NEXT_PAGE,
+  PREVIOUS_PAGE,
 } from "./types";
 
 export function insertToCart(item) {
@@ -105,5 +107,19 @@ export function changePage(currentPage) {
     payload: {
       currentPage,
     },
+  };
+}
+
+export function nextPage() {
+  return {
+    type: NEXT_PAGE,
+    payload: {},
+  };
+}
+
+export function previousPage() {
+  return {
+    type: PREVIOUS_PAGE,
+    payload: {},
   };
 }

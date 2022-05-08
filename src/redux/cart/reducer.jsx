@@ -10,6 +10,8 @@ import {
   LIKE,
   DISLIKE,
   CHANGE_PAGE,
+  PREVIOUS_PAGE,
+  NEXT_PAGE,
 } from "./types";
 
 const initialState = {
@@ -42,10 +44,10 @@ const initialState = {
     },
     {
       id: 4,
-      image: "Images/grape.png",
-      name: "Grape",
-      price: 46,
-      like: 24,
+      image: "Images/pineapple.png",
+      name: "PineApple",
+      price: 54,
+      like: 16,
       likeFlag: false,
     },
     {
@@ -58,10 +60,42 @@ const initialState = {
     },
     {
       id: 6,
+      image: "Images/grape.png",
+      name: "Grape",
+      price: 46,
+      like: 24,
+      likeFlag: false,
+    },
+    {
+      id: 7,
+      image: "Images/grape.png",
+      name: "Grape",
+      price: 46,
+      like: 24,
+      likeFlag: false,
+    },
+    {
+      id: 8,
+      image: "Images/mango.png",
+      name: "Mango",
+      price: 56,
+      like: 26,
+      likeFlag: false,
+    },
+    {
+      id: 9,
       image: "Images/pineapple.png",
       name: "PineApple",
       price: 54,
       like: 16,
+      likeFlag: false,
+    },
+    {
+      id: 10,
+      image: "Images/grape.png",
+      name: "Grape",
+      price: 46,
+      like: 24,
       likeFlag: false,
     },
   ],
@@ -236,6 +270,16 @@ function reducer(state = initialState, action) {
       return {
         ...state,
         currentPage: action.payload.currentPage,
+      };
+    case NEXT_PAGE:
+      return {
+        ...state,
+        currentPage: state.currentPage + 1,
+      };
+    case PREVIOUS_PAGE:
+      return {
+        ...state,
+        currentPage: state.currentPage - 1,
       };
     default:
       return state;
