@@ -1,0 +1,36 @@
+.products {
+  text-align: center;
+}
+
+.products h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+.product {
+  background-color: white;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+.product h3 {
+  margin: 10px;
+}
+
+.image-item {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.same-width {
+  width: 150px;
+}
+
+.clear-fix {
+  content: "";
+  display: block;
+  clear: both;
+}

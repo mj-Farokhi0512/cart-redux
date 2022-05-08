@@ -1,0 +1,14 @@
+export const INSERT_TO_CART = "INSERT_TO_CART";
+export const REMOVE_ITEM = "REMOVE_ITEM";
+export const INCREMENT_ITEM = "INCREMENT_ITEM";
+export const DECREMENT_ITEM = "DECREMENT_ITEM";
+export const CLEAR_CART = "CLEAR_CART";
+export const BUY = "BUY";
+export const DISCOUNT_CODE = "DISCOUNT_CODE";
+export const DONT_DISCOUNT = "DONT_DISCOUNT";
+export const DISCOUNT = "DISCOUNT";
+export const LIKE = "LIKE";
+export const DISLIKE = "DISLIKE";
+export const CHANGE_PAGE = "CHANGE_PAGE";
+export const NEXT_PAGE = "NEXT_PAGE";
+export const PREVIOUS_PAGE = "PREVIOUS_PAGE";

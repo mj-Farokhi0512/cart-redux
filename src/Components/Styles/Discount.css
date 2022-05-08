@@ -1,0 +1,158 @@
+.fade-in-right {
+  animation: fade-in-right 400ms forwards;
+}
+
+.fade-in-left {
+  animation: fade-in-left 300ms forwards;
+}
+
+.fade-out-left {
+  animation: fade-out-left 300ms forwards;
+}
+
+.fade-out-right {
+  animation: fade-out-right 300ms forwards;
+}
+
+.fade-in-top {
+  animation: fade-in-top 500ms forwards;
+}
+
+.fade-out-down {
+  animation: fade-out-down 500ms forwards;
+}
+
+@keyframes fade-in-right {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fade-out-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform-origin: center center;
+    transform: scale(0);
+    border-radius: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 0;
+  }
+}
+
+@keyframes fade-out-down {
+  0% {
+    opacity: 1;
+    transform-origin: center center;
+    transform: scale(1);
+    border-radius: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    border-radius: 100%;
+  }
+}
+
+.bg-float {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.float-page {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.float-page h3 {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 7px #bbb;
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  /* margin: 100px auto 20px auto; */
+}
+
+.btn-copy {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+}
+
+.bs-danger:focus {
+  border: 1px solid red !important;
+  box-shadow: 0 0 0 5px red !important;
+  background-color: rgb(253, 200, 200);
+}
+
+.bs-success:focus {
+  border: 1px solid rgb(0, 170, 0) !important;
+  box-shadow: 0 0 0 5px rgb(0, 170, 0) !important;
+  background-color: rgb(175, 255, 175);
+}
+
+.empty-cart {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #aaa;
+  width: 180px;
+}
